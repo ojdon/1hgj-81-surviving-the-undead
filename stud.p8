@@ -52,6 +52,7 @@ end
 -- update functions
 function titleupdate()
  if btnp(4) then
+ 	gamereset()
   scene=1
  end
 end
@@ -92,6 +93,14 @@ function gameupdate()
  status = "bordered up those windows"
  endofday()
  end
+end
+
+function gamereset()
+	health = 100
+	food = 100
+	ammo = 20
+	shelter = 100
+	score = 1
 end
 
 function endofday()
